@@ -6,7 +6,7 @@
  @section('konten')
  
     <div class="banner">
-     <center><img src={{ asset('assets/img/banner.jpg') }} class="rounded mx-auto d-block " alt="SMA Abdiwacana Pontianak"></center>
+     <img src={{ asset('assets/img/banner.png') }} class="rounded mx-auto d-block" alt="SMA Abdiwacana Pontianak" >
     </div>
     </div>
  

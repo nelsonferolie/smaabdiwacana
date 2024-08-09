@@ -22,13 +22,13 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse text-center text-black fs-800 fw-semibold" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link " aria-current="page" href="/">Beranda</a>
+              <a class="nav-link" aria-current="page" href="/">Beranda</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/profilesekolah">Tentang Sekolah</a>
+              <a class="nav-link" href="/profilesekolah">Profile Sekolah</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLSextpMO_b9ZDpWyHGC5lCHqq0eGiFXLVilYpN4yF70IKQ5eDw/viewform?usp=sf_link" target="_blank">PPDB</a>
@@ -81,8 +81,10 @@
   <!-- Grid container -->
 
   <!-- Copyright -->
-  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2); color:#2F3A56">
-    © 2024 Copyright
+  <div class="text-center p-3" style="color:#2F3A56">
+    <div class="simple-footer">
+      Copyright &copy; Nelson Ferolie {{ date('Y') }}
+  </div>
   </div>
   <!-- Copyright -->
 </footer>

@@ -15,9 +15,9 @@
                 <div class="row">
                     <div class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-6 offset-lg-3">
                         <div class="login-brand">
-                            <img src="{{ asset('assets/img/logo.png') }}" alt="logo" width="100"
-                                class="shadow-lights">
-                            <p>SMA ABDIWACANA</p>
+                            <a class="navbar-brand" href="/">
+                                <img src="{{ asset('assets/img/logo.png') }}" alt="logo" width="100"  href="/"></a>
+                            <p class="pt-3">SMA ABDIWACANA</p>
                         </div>
                         @if (session()->has('info'))
                             <div class="alert alert-primary">
@@ -31,7 +31,7 @@
                         @endif
                         @yield('content')
                         <div class="simple-footer">
-                            Copyright &copy; NELSON KING {{ date('Y') }}
+                            Copyright &copy; Nelson Ferolie {{ date('Y') }}
                         </div>
                     </div>
                 </div>
