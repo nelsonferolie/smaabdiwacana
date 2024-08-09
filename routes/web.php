@@ -25,13 +25,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-})->middleware('auth');
+    return view('home');
+})
+    // ->middleware('auth')
+;
 
 Auth::routes();
 
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/profilesekolah',[\App\Http\Controllers\BlogController::class, 'index'])->name('profilesekolah');
+
 Route::group(['middleware' => 'auth'], function () {
     Route::get('/profile', [UserController::class, 'edit'])->name('profile');
     Route::put('/update-profile', [UserController::class, 'update'])->name('update.profile');
