@@ -10,6 +10,7 @@ use App\Http\Controllers\MateriController;
 use App\Http\Controllers\SiswaController;
 use App\Http\Controllers\TugasController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\BlogController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -34,7 +35,7 @@ Auth::routes();
 
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/profilesekolah',[\App\Http\Controllers\BlogController::class, 'index'])->name('profilesekolah');
+Route::get('/profilesekolah', [\App\Http\Controllers\BlogController::class, 'index'])->name('profilesekolah');
 
 Route::group(['middleware' => 'auth'], function () {
     Route::get('/profile', [UserController::class, 'edit'])->name('profile');
