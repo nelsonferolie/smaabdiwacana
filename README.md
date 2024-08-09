@@ -3,9 +3,8 @@
 clone project atau download
 
 ```bash
-  git clone https://github.com/lacsapadnan/Sistem-Informasi-Sekolah.git
-  cd Sistem-Informasi-Sekolah
-  npm install
+  git clone https://github.com/nelsonferolie/smaabdiwacanaptk
+  cd smaabdiwacana
   composer install
   cp .env.example .env
 ```
